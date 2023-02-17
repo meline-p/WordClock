@@ -839,7 +839,6 @@ function getHoursAndMinutes(){
             }
             if (minutes >= 55 && minutes < 60){
                 midi.forEach(x => x.classList.add('light'));
-                heures.forEach(x => x.classList.add('light'));
                 moins.forEach(x => x.classList.add('light'));
                 cinqM.forEach(x => x.classList.add('light'));
             }
