@@ -1,14 +1,23 @@
 body{
-background-color: rgb(50, 50, 50);
+    background-color: rgb(50, 50, 50);
+    margin: 0;
 }
 
+/* TABLEAU */
 table{
     margin: auto;
 }
 
-.container {
+.container-french {
     margin: auto;
     padding: 100px 20px;
+    text-align: center;
+    font-size: 60px;
+    font-family: sans-serif;
+}
+.container-english{
+    margin: auto;
+    padding: 60px 20px;
     text-align: center;
     font-size: 60px;
     font-family: sans-serif;
@@ -24,3 +33,67 @@ table{
     text-align: center;
     text-shadow: 0px 0px 30px white ;
 }
+
+/* LANGUES */
+.langues-container{
+    margin: 0;
+    box-shadow: 0 1px 5px rgba(80, 80, 80, 0.5);
+}
+.langues-group{
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    margin: auto;
+}
+.langues-item{
+    padding: 0px 10px;
+    text-align: center;
+    margin: auto;
+    
+    cursor: pointer;
+}
+.langues-item a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #464646;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.langues-item a:hover{
+    color: #fff;
+    text-shadow: 0px 0px 30px white ;
+}
+.langue-active a{
+    color: #8d8d8d;
+    text-shadow: 0px 0px 30px white ;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 700px){
+    .container-french {
+        font-size: 40px;
+    }
+    .container-english{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .container-french {
+        font-size: 26px;
+    }
+    .container-english{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .container-french {
+        font-size: 18px;
+    }
+    .container-english{
+        font-size: 18px;
+    }
+}
+

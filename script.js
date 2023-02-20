@@ -2,6 +2,7 @@ var letter = document.querySelectorAll("tr");
 var light = document.querySelector(".light");
 var dark = document.querySelector(".dark");
 
+// en Français
 var une = document.querySelectorAll(".une");
 var deux = document.querySelectorAll(".deux");
 var trois = document.querySelectorAll(".trois");
@@ -30,7 +31,35 @@ var dixM = document.querySelectorAll(".dix-m");
 var quart = document.querySelectorAll(".quart");
 var demie = document.querySelectorAll(".demie");
 
-function getHoursAndMinutes(){
+// en Anglais
+var one = document.querySelectorAll(".one");
+var two = document.querySelectorAll(".two");
+var three = document.querySelectorAll(".three");
+var four = document.querySelectorAll(".four");
+var five = document.querySelectorAll(".five");
+var sixx = document.querySelectorAll(".sixx");
+var seven = document.querySelectorAll(".seven");
+var eight = document.querySelectorAll(".eight");
+var nine = document.querySelectorAll(".nine");
+var ten = document.querySelectorAll(".ten");
+var eleven = document.querySelectorAll(".eleven");
+var twelve = document.querySelectorAll(".twelve");
+
+var fiveM = document.querySelectorAll(".five-m");
+var tenM = document.querySelectorAll(".ten-m");
+var fifteenM = document.querySelectorAll(".fifteen-m");
+var twentyM = document.querySelectorAll(".twenty-m");
+var twentyFiveM = document.querySelectorAll(".twenty-five-m");
+var thirtyM = document.querySelectorAll(".thirty-m");
+
+var mins = document.querySelectorAll(".minutes");
+var past = document.querySelectorAll(".past");
+var to = document.querySelectorAll(".to");
+var oclock = document.querySelectorAll(".oclock");
+
+
+// en Français
+function getFrenchClock(){
     var hours = new Date().getHours();
     var minutes = new Date().getMinutes();
 
@@ -971,9 +1000,876 @@ function getHoursAndMinutes(){
         }
     }
 }
+getFrenchClock();
 
-getHoursAndMinutes();
+// en Anglais
+function getEnglishClock(){
+    var hours = new Date().getHours();
+    var minutes = new Date().getMinutes();
 
+    showHours();
+
+    function showHours(){
+        if (hours == 0 || hours == 12){
+            if (minutes < 5){
+                twelve.forEach(x => x.classList.add('light'));
+                oclock.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 5 && minutes < 10){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                twelve.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 10 && minutes < 15){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                twelve.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 15 && minutes < 20){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                twelve.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 20 && minutes < 25){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                twelve.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 25 && minutes < 30){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                twelve.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 30 && minutes < 35){
+                thirtyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                twelve.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 35 && minutes < 40){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                one.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 40 && minutes < 45){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                one.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 45 && minutes < 50){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                one.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 50 && minutes < 55){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                one.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 55 && minutes < 60){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                one.forEach(x => x.classList.add('light'));
+            }
+    
+        }else if (hours == 1 || hours == 13){
+            if (minutes < 5){
+                one.forEach(x => x.classList.add('light'));
+                oclock.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 5 && minutes < 10){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                one.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 10 && minutes < 15){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                one.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 15 && minutes < 20){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                one.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 20 && minutes < 25){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                one.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 25 && minutes < 30){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                one.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 30 && minutes < 35){
+                thirtyM.forEach(x => x.classList.add('light'));
+                minutes.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                one.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 35 && minutes < 40){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                two.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 40 && minutes < 45){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                two.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 45 && minutes < 50){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                two.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 50 && minutes < 55){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                two.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 55 && minutes < 60){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                two.forEach(x => x.classList.add('light'));
+            }
+        }else if (hours == 2 || hours == 14){
+            if (minutes < 5){
+                two.forEach(x => x.classList.add('light'));
+                oclock.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 5 && minutes < 10){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                two.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 10 && minutes < 15){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                two.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 15 && minutes < 20){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                two.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 20 && minutes < 25){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                two.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 25 && minutes < 30){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                two.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 30 && minutes < 35){
+                thirtyM.forEach(x => x.classList.add('light'));
+                minutes.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                two.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 35 && minutes < 40){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                three.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 40 && minutes < 45){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                three.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 45 && minutes < 50){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                three.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 50 && minutes < 55){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                three.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 55 && minutes < 60){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                three.forEach(x => x.classList.add('light'));
+            }
+        }else if (hours == 3 || hours == 15){
+            if (minutes < 5){
+                three.forEach(x => x.classList.add('light'));
+                oclock.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 5 && minutes < 10){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                three.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 10 && minutes < 15){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                three.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 15 && minutes < 20){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                three.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 20 && minutes < 25){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                three.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 25 && minutes < 30){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                three.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 30 && minutes < 35){
+                thirtyM.forEach(x => x.classList.add('light'));
+                minutes.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                three.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 35 && minutes < 40){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                four.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 40 && minutes < 45){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                four.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 45 && minutes < 50){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                four.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 50 && minutes < 55){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                four.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 55 && minutes < 60){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                four.forEach(x => x.classList.add('light'));
+            }
+        }else if (hours == 4 || hours == 16){
+            if (minutes < 5){
+                four.forEach(x => x.classList.add('light'));
+                oclock.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 5 && minutes < 10){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                four.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 10 && minutes < 15){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                four.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 15 && minutes < 20){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                four.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 20 && minutes < 25){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                four.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 25 && minutes < 30){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                four.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 30 && minutes < 35){
+                thirtyM.forEach(x => x.classList.add('light'));
+                minutes.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                four.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 35 && minutes < 40){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                five.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 40 && minutes < 45){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                five.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 45 && minutes < 50){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                five.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 50 && minutes < 55){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                five.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 55 && minutes < 60){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                five.forEach(x => x.classList.add('light'));
+            }
+        }else if (hours == 5 || hours == 17){
+            if (minutes < 5){
+                five.forEach(x => x.classList.add('light'));
+                oclock.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 5 && minutes < 10){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                five.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 10 && minutes < 15){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                five.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 15 && minutes < 20){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                five.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 20 && minutes < 25){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                five.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 25 && minutes < 30){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                five.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 30 && minutes < 35){
+                thirtyM.forEach(x => x.classList.add('light'));
+                minutes.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                five.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 35 && minutes < 40){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                sixx.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 40 && minutes < 45){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                sixx.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 45 && minutes < 50){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                sixx.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 50 && minutes < 55){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                sixx.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 55 && minutes < 60){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                sixx.forEach(x => x.classList.add('light'));
+            }
+        }else if (hours == 6 || hours == 18){
+            if (minutes < 5){
+                sixx.forEach(x => x.classList.add('light'));
+                oclock.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 5 && minutes < 10){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                sixx.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 10 && minutes < 15){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                sixx.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 15 && minutes < 20){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                sixx.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 20 && minutes < 25){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                sixx.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 25 && minutes < 30){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                sixx.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 30 && minutes < 35){
+                thirtyM.forEach(x => x.classList.add('light'));
+                minutes.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                sixx.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 35 && minutes < 40){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                seven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 40 && minutes < 45){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                seven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 45 && minutes < 50){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                seven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 50 && minutes < 55){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                seven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 55 && minutes < 60){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                seven.forEach(x => x.classList.add('light'));
+            }
+        }else if (hours == 7 || hours == 19){
+            if (minutes < 5){
+                seven.forEach(x => x.classList.add('light'));
+                oclock.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 5 && minutes < 10){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                seven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 10 && minutes < 15){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                seven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 15 && minutes < 20){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                seven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 20 && minutes < 25){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                seven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 25 && minutes < 30){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                seven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 30 && minutes < 35){
+                thirtyM.forEach(x => x.classList.add('light'));
+                minutes.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                seven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 35 && minutes < 40){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                eight.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 40 && minutes < 45){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                eight.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 45 && minutes < 50){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                eight.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 50 && minutes < 55){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                eight.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 55 && minutes < 60){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                eight.forEach(x => x.classList.add('light'));
+            }
+        }else if (hours == 8 || hours == 20){
+            if (minutes < 5){
+                eight.forEach(x => x.classList.add('light'));
+                oclock.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 5 && minutes < 10){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                eight.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 10 && minutes < 15){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                eight.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 15 && minutes < 20){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                eight.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 20 && minutes < 25){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                eight.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 25 && minutes < 30){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                eight.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 30 && minutes < 35){
+                thirtyM.forEach(x => x.classList.add('light'));
+                minutes.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                eight.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 35 && minutes < 40){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                nine.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 40 && minutes < 45){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                nine.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 45 && minutes < 50){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                nine.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 50 && minutes < 55){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                nine.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 55 && minutes < 60){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                nine.forEach(x => x.classList.add('light'));
+            }
+        }else if (hours == 9 || hours == 21){
+            if (minutes < 5){
+                nine.forEach(x => x.classList.add('light'));
+                oclock.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 5 && minutes < 10){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                nine.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 10 && minutes < 15){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                nine.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 15 && minutes < 20){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                nine.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 20 && minutes < 25){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                nine.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 25 && minutes < 30){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                nine.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 30 && minutes < 35){
+                thirtyM.forEach(x => x.classList.add('light'));
+                minutes.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                nine.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 35 && minutes < 40){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                ten.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 40 && minutes < 45){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                ten.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 45 && minutes < 50){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                ten.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 50 && minutes < 55){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                ten.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 55 && minutes < 60){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                ten.forEach(x => x.classList.add('light'));
+            }
+        }else if (hours == 10 || hours == 22){
+            if (minutes < 5){
+                ten.forEach(x => x.classList.add('light'));
+                oclock.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 5 && minutes < 10){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                ten.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 10 && minutes < 15){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                ten.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 15 && minutes < 20){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                ten.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 20 && minutes < 25){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                ten.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 25 && minutes < 30){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                ten.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 30 && minutes < 35){
+                thirtyM.forEach(x => x.classList.add('light'));
+                minutes.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                ten.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 35 && minutes < 40){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                eleven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 40 && minutes < 45){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                eleven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 45 && minutes < 50){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                eleven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 50 && minutes < 55){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                eleven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 55 && minutes < 60){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                eleven.forEach(x => x.classList.add('light'));
+            }
+        }else if (hours == 11 || hours == 23){
+            if (minutes < 5){
+                eleven.forEach(x => x.classList.add('light'));
+                oclock.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 5 && minutes < 10){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                eleven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 10 && minutes < 15){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                eleven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 15 && minutes < 20){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                eleven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 20 && minutes < 25){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                eleven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 25 && minutes < 30){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                eleven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 30 && minutes < 35){
+                thirtyM.forEach(x => x.classList.add('light'));
+                minutes.forEach(x => x.classList.add('light'));
+                past.forEach(x => x.classList.add('light'));
+                eleven.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 35 && minutes < 40){
+                twentyFiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                twelve.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 40 && minutes < 45){
+                twentyM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                twelve.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 45 && minutes < 50){
+                fifteenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                twelve.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 50 && minutes < 55){
+                tenM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                twelve.forEach(x => x.classList.add('light'));
+            }
+            if (minutes >= 55 && minutes < 60){
+                fiveM.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
+                to.forEach(x => x.classList.add('light'));
+                twelve.forEach(x => x.classList.add('light'));
+            }
+        }
+    }
+}
+getEnglishClock();
+
+
+// reload page every second
 setTimeout(function (){
     window.location.reload();
 }, 1000);
