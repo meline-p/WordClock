@@ -1119,7 +1119,7 @@ function getEnglishClock(){
             }
             if (minutes >= 30 && minutes < 35){
                 thirtyM.forEach(x => x.classList.add('light'));
-                minutes.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
                 past.forEach(x => x.classList.add('light'));
                 one.forEach(x => x.classList.add('light'));
             }
@@ -1190,7 +1190,7 @@ function getEnglishClock(){
             }
             if (minutes >= 30 && minutes < 35){
                 thirtyM.forEach(x => x.classList.add('light'));
-                minutes.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
                 past.forEach(x => x.classList.add('light'));
                 two.forEach(x => x.classList.add('light'));
             }
@@ -1261,7 +1261,7 @@ function getEnglishClock(){
             }
             if (minutes >= 30 && minutes < 35){
                 thirtyM.forEach(x => x.classList.add('light'));
-                minutes.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
                 past.forEach(x => x.classList.add('light'));
                 three.forEach(x => x.classList.add('light'));
             }
@@ -1332,7 +1332,7 @@ function getEnglishClock(){
             }
             if (minutes >= 30 && minutes < 35){
                 thirtyM.forEach(x => x.classList.add('light'));
-                minutes.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
                 past.forEach(x => x.classList.add('light'));
                 four.forEach(x => x.classList.add('light'));
             }
@@ -1403,7 +1403,7 @@ function getEnglishClock(){
             }
             if (minutes >= 30 && minutes < 35){
                 thirtyM.forEach(x => x.classList.add('light'));
-                minutes.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
                 past.forEach(x => x.classList.add('light'));
                 five.forEach(x => x.classList.add('light'));
             }
@@ -1474,7 +1474,7 @@ function getEnglishClock(){
             }
             if (minutes >= 30 && minutes < 35){
                 thirtyM.forEach(x => x.classList.add('light'));
-                minutes.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
                 past.forEach(x => x.classList.add('light'));
                 sixx.forEach(x => x.classList.add('light'));
             }
@@ -1545,7 +1545,7 @@ function getEnglishClock(){
             }
             if (minutes >= 30 && minutes < 35){
                 thirtyM.forEach(x => x.classList.add('light'));
-                minutes.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
                 past.forEach(x => x.classList.add('light'));
                 seven.forEach(x => x.classList.add('light'));
             }
@@ -1616,7 +1616,7 @@ function getEnglishClock(){
             }
             if (minutes >= 30 && minutes < 35){
                 thirtyM.forEach(x => x.classList.add('light'));
-                minutes.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
                 past.forEach(x => x.classList.add('light'));
                 eight.forEach(x => x.classList.add('light'));
             }
@@ -1687,7 +1687,7 @@ function getEnglishClock(){
             }
             if (minutes >= 30 && minutes < 35){
                 thirtyM.forEach(x => x.classList.add('light'));
-                minutes.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
                 past.forEach(x => x.classList.add('light'));
                 nine.forEach(x => x.classList.add('light'));
             }
@@ -1758,7 +1758,7 @@ function getEnglishClock(){
             }
             if (minutes >= 30 && minutes < 35){
                 thirtyM.forEach(x => x.classList.add('light'));
-                minutes.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
                 past.forEach(x => x.classList.add('light'));
                 ten.forEach(x => x.classList.add('light'));
             }
@@ -1829,7 +1829,7 @@ function getEnglishClock(){
             }
             if (minutes >= 30 && minutes < 35){
                 thirtyM.forEach(x => x.classList.add('light'));
-                minutes.forEach(x => x.classList.add('light'));
+                mins.forEach(x => x.classList.add('light'));
                 past.forEach(x => x.classList.add('light'));
                 eleven.forEach(x => x.classList.add('light'));
             }
