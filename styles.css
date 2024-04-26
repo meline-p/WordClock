@@ -10,16 +10,30 @@ table{
 
 .container-french {
     margin: auto;
-    padding: 100px 20px;
+    padding: 60px 20px;
     text-align: center;
-    font-size: 60px;
+    font-size: 56px;
     font-family: sans-serif;
 }
 .container-english{
     margin: auto;
     padding: 60px 20px;
     text-align: center;
-    font-size: 60px;
+    font-size: 56px;
+    font-family: sans-serif;
+}
+.container-korean{
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 70px;
+    font-family: sans-serif;
+}
+.container-chinese{
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 70px;
     font-family: sans-serif;
 }
 
@@ -77,6 +91,12 @@ table{
     .container-english{
         font-size: 40px;
     }
+    .container-korean{
+        font-size: 50px;
+    }
+    .container-chinese{
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 450px){
@@ -86,6 +106,12 @@ table{
     .container-english{
         font-size: 26px;
     }
+    .container-korean{
+        font-size: 30px;
+    }
+    .container-chinese{
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 300px){
@@ -94,6 +120,12 @@ table{
     }
     .container-english{
         font-size: 18px;
+    }
+    .container-korean{
+        font-size: 20px;
+    }
+    .container-chinese{
+        font-size: 20px;
     }
 }
 
