@@ -67,11 +67,11 @@ function getFrenchClock() {
     else if (minutes >= 10 && minutes < 15) hourArray.push(...french['dixM']);
     else if (minutes >= 15 && minutes < 20) hourArray.push(...french['et'], ...french['quart']);
     else if (minutes >= 20 && minutes < 25) hourArray.push(...french['vingt']);
-    else if (minutes >= 25 && minutes < 30) hourArray.push(...french['vingt'], ...french['cinqM']);
+    else if (minutes >= 25 && minutes < 30) hourArray.push(...french['vingtCinq']);
 
     else if (minutes >= 30 && minutes < 35) hourArray.push(...french['et'], ...french['demie']);
 
-    else if (minutes >= 35 && minutes < 40) hourArray.push(...french['moins'], ...french['vingt'], ...french['cinqM']);
+    else if (minutes >= 35 && minutes < 40) hourArray.push(...french['moins'], ...french['vingtCinq']);
     else if (minutes >= 40 && minutes < 45) hourArray.push(...french['moins'], ...french['vingt']);
     else if (minutes >= 45 && minutes < 50) hourArray.push(...french['moins'], ...french['le'], ...french['quart']);
     else if (minutes >= 50 && minutes < 55) hourArray.push(...french['moins'], ...french['dixM']);

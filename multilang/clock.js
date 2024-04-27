@@ -2,6 +2,7 @@ import { french, getFrenchClock } from './french.js';
 import { english, getEnglishClock } from './english.js';
 import { korean, getKoreanClock } from './korean.js';
 import { chinese, getChineseClock } from './chinese.js';
+import { spanish, getSpanishClock } from './spanish.js';
 
 function initHorloge(lang) {
     let timeData;
@@ -19,6 +20,9 @@ function initHorloge(lang) {
         case 'chinese': 
             timeData = chinese;
             break;
+        case 'spanish': 
+            timeData = spanish;
+            break;
         default:
             timeData = french;
     }
@@ -29,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const englishLink = document.getElementById('english-link');
     const koreanLink = document.getElementById('korean-link');
     const chineseLink = document.getElementById('chinese-link');
+    const spanishLink = document.getElementById('spanish-link');
 
     frenchLink.addEventListener('click', function(event) {
         event.preventDefault();
@@ -52,5 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         initHorloge('chinese');
         window.location.href = 'chinese.html';
+    });
+
+    spanishLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        initHorloge('spanish');
+        window.location.href = 'spanish.html';
     });
 });

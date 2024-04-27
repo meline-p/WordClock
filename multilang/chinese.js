@@ -61,7 +61,7 @@ function getChineseClock() {
     else if(showHours == 19) hourArray.push(...chinese['xiawu'],...chinese['qi'], ... chinese['dian']);
     else if(showHours == 20) hourArray.push(...chinese['xiawu'],...chinese['ba'],... chinese['dian']);
     else if(showHours == 21) hourArray.push(...chinese['xiawu'],...chinese['jiu'],... chinese['dian']);
-    else if(showHours == 22) hourArray.push(...chinese['xiawu'],...chinese['yeol'], ... chinese['dian']);
+    else if(showHours == 22) hourArray.push(...chinese['xiawu'],...chinese['shiH'], ... chinese['dian']);
     else if(showHours == 23) hourArray.push(...chinese['xiawu'],...chinese['shiH'],...chinese['yi'], ... chinese['dian']);
 
 

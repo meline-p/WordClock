@@ -36,6 +36,13 @@ table{
     font-size: 70px;
     font-family: sans-serif;
 }
+.container-spanish {
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+}
 
 .dark{
     color:rgb(65, 65, 65);
@@ -97,6 +104,9 @@ table{
     .container-chinese{
         font-size: 50px;
     }
+    .container-spanish {
+        font-size: 35px;
+    }
 }
 
 @media screen and (max-width: 450px){
@@ -112,6 +122,9 @@ table{
     .container-chinese{
         font-size: 40px;
     }
+    .container-spanish {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 300px){
@@ -126,6 +139,9 @@ table{
     }
     .container-chinese{
         font-size: 20px;
+    }
+    .container-spanish {
+        font-size: 16px;
     }
 }
 
