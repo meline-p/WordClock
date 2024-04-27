@@ -69,7 +69,8 @@ function getSpanishClock() {
     else if(showHours >= 13 && showHours < 19) hourArray.push(...spanish['tarde']);
     else hourArray.push(...spanish['noche']);
 
-    if (minutes >= 5 && minutes < 10) hourArray.push(...spanish['y'],...spanish['cincoM']);
+    if (minutes < 5) hourArray.push(...spanish['enpunto']);
+    else if (minutes >= 5 && minutes < 10) hourArray.push(...spanish['y'],...spanish['cincoM']);
     else if (minutes >= 10 && minutes < 15) hourArray.push(...spanish['y'],...spanish['diezM']);
     else if (minutes >= 15 && minutes < 20) hourArray.push(...spanish['y'], ...spanish['cuarto']);
     else if (minutes >= 20 && minutes < 25) hourArray.push(...spanish['y'],...spanish['veinte']);
@@ -83,7 +84,6 @@ function getSpanishClock() {
     else if (minutes >= 50 && minutes < 55) hourArray.push(...spanish['menos'],...spanish['diezM']);
     else if (minutes >= 55 && minutes < 60) hourArray.push(...spanish['menos'],...spanish['cincoM']);
     
-   
     addToElements(hourArray);
 }
 
